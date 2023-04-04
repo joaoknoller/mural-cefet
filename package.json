@@ -1,0 +1,49 @@
+{
+  "name": "sistema-avisos",
+  "version": "1.0.0",
+  "description": "Sistema de Avisos criado por alunos da disciplina de Projeto Integrador de Sistemas, sob administração do professor Thiago Delgado Pinto, para a Secretaria do CEFET/RJ Nova Friburgo",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/cefet-nf/sistema-avisos.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/cefet-nf/sistema-avisos/issues"
+  },
+  "homepage": "https://gitlab.com/cefet-nf/sistema-avisos#readme",
+  "keywords": [
+    "cefet",
+    "sistema",
+    "aviso"
+  ],
+  "author": "",
+  "license": "AGPL-3.0",
+  "directories": {
+    "doc": "doc"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "precommit": "lint-staged && npm run test",
+    "setup": "npm i && npm run prepare && cd api && composer install && cd ../gestor && npm install && cd ../mural && npm install && cd ..",
+    "test": "cd api && composer run-script test && cd ../gestor && npm run test && cd ../mural && npm run test && cd ..",
+    "cov": "cd api && composer run-script cov && cd ../gestor && npm run cov && cd ../mural && npm run cov && cd ..",
+    "format": "prettier --write",
+    "lint": "eslint --fix --no-error-on-unmatched-pattern --ignore-path .gitignore",
+    "flint": "npm run format && npm run lint"
+  },
+  "lintstaged": {
+    "*": "npm run flint"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import-helpers": "^1.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.1",
+    "prettier": "^2.6.2"
+  }
+}

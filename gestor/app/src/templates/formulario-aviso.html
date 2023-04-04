@@ -1,0 +1,38 @@
+<div class="formulario_wrap">
+	<form action="" method="post" id="formulario-aviso">
+		<label for="mensagem">Mensagem:</label>
+		<textarea name="mensagem" id="mensagem"></textarea>
+		<label>
+			<input type="date" name="validade" id="validade" placeholder="dd/mm/aaaa" />
+		</label>
+		<label
+			>Urgente?
+			<input type="checkbox" name="ehUrgente" id="ehUrgente" />
+		</label>
+		<label
+			>Setor
+			<select name="setorId" id="setorId">
+				<option value="0" data-cor="default">Escolha um setor</option>
+			</select>
+		</label>
+		<div id="periodos-exibicao">Períodos de Exibição:</div>
+		<span>Público-alvo:</span>
+		<div id="publicos-alvo-cadastrados">
+			<label class="escondido">
+				<input
+					type="text"
+					name="novo-publico-alvo"
+					id="novo-publico-alvo"
+					placeholder="Ex.: Alunos"
+				/>
+				<button id="cadastrar-publico-alvo" type="button">Cadastrar público-alvo</button>
+			</label>
+			<label>
+				<input type="checkbox" name="novo" id="novo" value="0" />
+				Novo
+			</label>
+		</div>
+		<button id="enviar" class="enviar" type="submit">Enviar</button>
+	</form>
+	<a class="botao" href="/">Voltar</a>
+</div>

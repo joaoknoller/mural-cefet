@@ -1,0 +1,27 @@
+{
+  "name": "gestor",
+  "version": "0.1.0",
+  "description": "Gestor de Avisos",
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage",
+    "clear": "rimraf dist",
+    "start": "rimraf dist && parcel app/index.html --open",
+    "e2e": "codeceptjs run --steps",
+    "build": "rimraf dist && parcel build app/index.html --dist-dir dist --no-source-maps"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs": "^3.3.3",
+    "jest": "^28.1.0",
+    "parcel": "^2.6.0",
+    "playwright": "^1.22.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.3",
+    "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "whatwg-fetch": "^3.6.2"
+  }
+}

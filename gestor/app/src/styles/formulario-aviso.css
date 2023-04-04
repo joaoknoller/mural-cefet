@@ -1,0 +1,46 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#formulario-aviso textarea {
+	resize: none;
+}
+
+#formulario-aviso label {
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.titulo {
+	text-align: center;
+}
+
+#enviar {
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+#urgencia {
+	display: inline-flex;
+	padding: 0 50% 10px;
+}
+
+#textoSetores {
+	padding-right: 12px;
+}
+
+#divSetor {
+	display: inline-flex;
+}
+
+#envio {
+	display: inline-flex;
+	width: 99%;
+	justify-content: flex-end;
+}
+
+#publicos-alvo-cadastrados {
+	display: flex;
+	flex-direction: column-reverse;
+}

@@ -1,0 +1,8 @@
+node_modules
+vendor
+dist
+coverage
+.parcel-cache
+.vscode
+**/*.log
+.scannerwork

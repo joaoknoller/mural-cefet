@@ -1,0 +1,8 @@
+{
+  "*.{json,md,css,html}": ["prettier --write"],
+  "api/**/*.{json,md,css,html}": ["prettier --write"],
+  "gestor/**/*.{json,md,css,html}": ["prettier --write"],
+  "gestor/app/**/*.{ts,js}": ["prettier --write"],
+  "mural/**/*.{json,md,css,html}": ["prettier --write"],
+  "mural/app/**/*.{ts,js}": ["prettier --write"]
+}

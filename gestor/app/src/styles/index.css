@@ -1,0 +1,26 @@
+header {
+	padding: 20px;
+	background-color: #8badd2;
+}
+
+#menu {
+	border-top: solid 1px #ffffff;
+	background-color: #8badd2;
+	padding: 10px 0;
+	display: flex;
+}
+
+.menu_item {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 0 25px;
+	transition: color 0.3s;
+}
+
+.menu_item:hover {
+	color: #1f4379;
+}
+
+.menu_item:not(:first-of-type) {
+	border-left: 1px solid #ffffff;
+}

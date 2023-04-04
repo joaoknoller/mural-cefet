@@ -1,0 +1,97 @@
+html {
+	height: 100vh;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	padding: 20px;
+	background-color: #1f4379;
+}
+
+.mural {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	height: 100%;
+	padding: 50px;
+	background-color: #d9d9d9;
+}
+
+.avisos-exibidos {
+	height: 100%;
+	max-height: 500px;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	gap: 10px;
+}
+
+.avisos_wrap {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.item {
+	height: 100%;
+	width: 100%;
+	padding: 15px 30px;
+	font-size: 2rem;
+	background-color: #ffffff;
+	display: flex;
+	gap: 10px;
+}
+
+.aviso-informacoes {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.setor,
+.urgente {
+	padding: 10px;
+	text-transform: capitalize;
+	width: 100%;
+	font-size: 1.3rem;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.urgente {
+	background-color: #ff0000;
+	color: #ffffff;
+}
+
+.aviso-mensagem {
+	width: 100%;
+}
+
+#avisos-urgentes .item {
+	border-left: 10px solid #ff0000;
+}
+
+.vazio {
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.vazio p {
+	background-color: #1f4379;
+	border-radius: 10px;
+	color: #ffffff;
+	padding: 10px;
+	font-size: 1.5rem;
+}

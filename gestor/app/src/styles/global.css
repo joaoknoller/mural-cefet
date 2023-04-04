@@ -1,0 +1,96 @@
+@import 'reset.css';
+@import 'index.css';
+/* @import '404.css'; */
+@import 'home.css';
+@import 'listagem.css';
+@import 'formulario-aviso.css';
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	width: 100%;
+	padding: 20px 50px;
+	margin: 0 auto;
+}
+
+main > div:first-child {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.titulo {
+	font-size: 2.5rem;
+	width: 100%;
+	text-align: center;
+}
+
+.botao {
+	text-transform: uppercase;
+	padding: 20px;
+	background-color: #1f4379;
+	color: #ffffff;
+	transition: background-color 0.5s;
+	text-decoration: none;
+	border-radius: 20px;
+	text-align: center;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.botao:hover {
+	background-color: #3269bb;
+}
+
+#mensagens {
+	color: #ffffff;
+	padding: 15px;
+	width: -moz-fit-content;
+	width: fit-content;
+	position: fixed;
+	bottom: 0.5rem;
+	left: 0.5rem;
+}
+
+#mensagens li {
+	display: block;
+}
+
+#mensagens span {
+	width: -moz-fit-content;
+	width: fit-content;
+	position: relative;
+	cursor: pointer;
+}
+
+.sucesso {
+	background-color: #04bf68;
+}
+
+.erro {
+	background-color: #ff1f1f;
+}
+
+.escondido {
+	display: none;
+}
+
+form {
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	border: 1px solid #000000;
+}
+
+.formulario_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
