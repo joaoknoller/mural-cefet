@@ -2,6 +2,12 @@
 
 Sistema de Avisos para a Secretaria do CEFET/RJ Nova Friburgo
 
+Este projeto foi desenvolvido da seguinte forma:
+
+api - backend da aplicação em PHP com MySQL
+gestor - aplicação frontend destinada ao gerenciamento dos avisos (listagem, cadastro, edição, etc)
+mural - aplicação frontend para a exibição dos avisos (inicialmente em tvs)
+
 - Autores: alunos da disciplina de Projeto Integrador de Sistemas
 - Supervisão: professor Thiago Delgado Pinto
 
